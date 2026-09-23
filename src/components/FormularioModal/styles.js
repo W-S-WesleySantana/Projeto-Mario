@@ -11,6 +11,8 @@ export const ModalOverlay = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 9999;
+
+ 
 `;
 
 export const ConteinerForm = styled.div`
@@ -19,6 +21,10 @@ export const ConteinerForm = styled.div`
   align-items: center;
   color: #000000;
   position: relative;
+
+
+
+ 
  
 
   form {
@@ -30,6 +36,11 @@ export const ConteinerForm = styled.div`
     width: 30vw;
     height: auto;
   
+    @media (max-width:500px){
+
+      width :70vw ;
+
+}
    
   }
 
@@ -69,6 +80,10 @@ export const ConteinerForm = styled.div`
       -webkit-box-shadow: 34px 55px 100px -2px rgba(159, 29, 29, 1);
     }
   }
+
+
+
+
 `;
 
 export const BtnFechar = styled.button`

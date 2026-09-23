@@ -4,6 +4,7 @@ import AvalicaoUsuario from "../../components/Avaliacoes"
 import TopHeader from "../../components/TopoHeader"
 import Whatssap from "../../assets/whatsapp.png"
 import {   Container } from "./styles";
+import { Link } from "react-router-dom";
 
 
 function NossosServiços() {
@@ -15,15 +16,21 @@ return(
 <TopHeader />
 
 <Container>
-<video autoPlay muted loop src={BackgroundVideo}></video>
+ <video 
+          autoplay
+          loop
+          muted
+          playsinline
+          webkit-playsinline 
+          src={BackgroundVideo}></video>
 
 <h1>Nossos Serviços</h1>
 
-<a href="https://wa.me" target="blank">
+<Link to="https://wa.me" target="blank">
 
 
 <img src={Whatssap} alt="Entra em contato pelo whatssap"/>
-</a>
+</Link>
 </Container>
 <AvalicaoUsuario/>
    

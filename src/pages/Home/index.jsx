@@ -9,6 +9,7 @@ import ContainerLeft from "../../components/ContainerLeft";
 import FormularioModal from "../../components/FormularioModal";
 
 import { Container, RightContainer, IconWhatssap } from "./styles";
+import { Link } from "react-router-dom";
 
 function Home() {
   // Estado que controla se a máscara escura/formulário abre ou fecha
@@ -17,31 +18,37 @@ function Home() {
   return (
     <>
       <Container>
-        <video autoPlay muted loop src={BackgroundVideo}></video>
+        <video 
+          autoplay
+          loop
+          muted
+          playsinline
+          webkit-playsinline 
+          src={BackgroundVideo}></video>
 
-    
+
         <TopoHeader />
 
-      
+
         <ContainerLeft aoClicarContato={() => setModalAberto(true)} />
 
         <RightContainer>
-        
-         <img src={MarioLuigi} alt="Imagem do Mario e Luigi" />
-         
+
+          <img src={MarioLuigi} alt="Imagem do Mario e Luigi" />
+
         </RightContainer>
 
         <IconWhatssap>
-          <a href="https://wa.me" target="blank">
+          <Link to="https://wa.me" target="blank">
             <img src={Whatssap} alt="icone Whatsapp" />
-          </a>
+          </Link>
         </IconWhatssap>
       </Container>
 
-    
-      <FormularioModal 
-        aberto={modalAberto} 
-        aoFechar={() => setModalAberto(false)} 
+
+      <FormularioModal
+        aberto={modalAberto}
+        aoFechar={() => setModalAberto(false)}
       />
     </>
   );

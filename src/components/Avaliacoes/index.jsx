@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import  Whatssap from "../../assets/whatsapp.png"
+import { Link } from "react-router-dom";
 import { Container,Formulario,Input,EstrelasContainer,EstrelaBotao,TextArea,BotaoEnviar,ListaContainer,CardAvaliacao, CardTopo,ExibirEstrelas,DataTexto } from "./styles.js";
 
 
@@ -112,9 +113,9 @@ function Avaliacoes() {
         )}
       </ListaContainer>
 
-      <a href="https://wa.me" target="blank">
+      <Link to="https://wa.me" target="blank">
      <img src={Whatssap} alt="Entra em contato pelo whatssap" />
-     </a>
+     </Link>
       
     </Container>
   );

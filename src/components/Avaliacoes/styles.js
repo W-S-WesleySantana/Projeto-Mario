@@ -86,7 +86,7 @@ export const EstrelaBotao = styled.button`
   border: none;
   font-size: 32px;
   cursor: pointer;
-  color: ${props => props.ativa ? "#ffc107" : "#e4e5e9"};
+  color: ${props => props.$ativa ? "#ffc107" : "#e4e5e9"};
   transition: color 0.2s;
   
   &:hover {

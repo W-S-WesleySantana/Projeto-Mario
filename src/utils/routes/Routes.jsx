@@ -1,19 +1,21 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from '../../pages/Home';
 import NossosServiços from '../../pages/NossosServiços'
 
 
 function AppRoutes() {
   return (
-    <BrowserRouter>
+    <HashRouter >
       <Routes>
       
         <Route path="/" element={<Home />} />
-        <Route path="/nossosServiços" element={<NossosServiços />} />
+        <Route path="/nossos-serviços" element={<NossosServiços />} />
       </Routes>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
 export default AppRoutes;
+
