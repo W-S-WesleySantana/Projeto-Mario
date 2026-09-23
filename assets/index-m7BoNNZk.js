@@ -168,7 +168,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
 
   }
-`;function xo({aberto:e,aoFechar:t}){return e?(0,z.jsx)(vo,{onClick:t,children:(0,z.jsxs)(yo,{onClick:e=>e.stopPropagation(),children:[(0,z.jsx)(bo,{onClick:t,children:`×`}),(0,z.jsxs)(`form`,{action:`#`,children:[(0,z.jsx)(`input`,{placeholder:`Seu Nome`}),(0,z.jsx)(`input`,{placeholder:`Telefone`}),(0,z.jsx)(`textarea`,{placeholder:`Digitar seu Problema`}),(0,z.jsx)(`button`,{type:`submit`,children:`ENVIAR`})]})]})}):null}var So=R.div`
+`;function xo({aberto:e,aoFechar:t}){let[n,r]=(0,x.useState)(!1);if(!e)return null;async function i(e){e.preventDefault(),r(!0);let n={nome:e.target.nome.value,email:e.target.email.value,problema:e.target.problema.value};try{(await fetch(`https://formsubmit.co`,{method:`POST`,headers:{"Content-Type":`application/json`,Accept:`application/json`},body:JSON.stringify(n)})).ok?(alert(`Mensagem enviada com sucesso!`),e.target.reset(),t()):alert(`Erro no servidor do FormSubmit. Verifique se digitou o e-mail correto.`)}catch{alert(`Erro de conexão. Verifique sua internet.`)}finally{r(!1)}}return(0,z.jsx)(vo,{onClick:t,children:(0,z.jsxs)(yo,{onClick:e=>e.stopPropagation(),children:[(0,z.jsx)(bo,{onClick:t,children:`×`}),(0,z.jsxs)(`form`,{onSubmit:i,children:[(0,z.jsx)(`input`,{placeholder:`Seu Nome`,type:`text`,name:`nome`,required:!0}),(0,z.jsx)(`input`,{placeholder:`Seu Email`,type:`email`,name:`email`,required:!0}),(0,z.jsx)(`textarea`,{placeholder:`Digitar seu Problema aqui...`,name:`problema`,required:!0}),(0,z.jsx)(`button`,{type:`submit`,disabled:n,children:n?`ENVIANDO...`:`ENVIAR`})]})]})})}var So=R.div`
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -239,7 +239,7 @@ height: auto;
       border-radius: 30px;
     }
   }
-`;function To(){let[e,t]=(0,x.useState)(!1);return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsxs)(So,{children:[(0,z.jsx)(`video`,{autoplay:!0,loop:!0,muted:!0,playsinline:!0,"webkit-playsinline":!0,src:Hn}),(0,z.jsx)(Za,{}),(0,z.jsx)(_o,{aoClicarContato:()=>t(!0)}),(0,z.jsx)(Co,{children:(0,z.jsx)(`img`,{src:Vn,alt:`Imagem do Mario e Luigi`})}),(0,z.jsx)(wo,{children:(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`icone Whatsapp`})})})]}),(0,z.jsx)(xo,{aberto:e,aoFechar:()=>t(!1)})]})}var Eo=Ja`
+`;function To(){let[e,t]=(0,x.useState)(!1);return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsxs)(So,{children:[(0,z.jsx)(`video`,{autoPlay:!0,loop:!0,muted:!0,playsInline:!0,src:Hn}),(0,z.jsx)(Za,{}),(0,z.jsx)(_o,{aoClicarContato:()=>t(!0)}),(0,z.jsx)(Co,{children:(0,z.jsx)(`img`,{src:Vn,alt:`Imagem do Mario e Luigi`})}),(0,z.jsx)(wo,{children:(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`icone Whatsapp`})})})]}),(0,z.jsx)(xo,{aberto:e,aoFechar:()=>t(!1)})]})}var Eo=Ja`
   from { opacity: 0; visibility: hidden; }
   to { opacity: 1; visibility: visible; }
 `,Do=R.div`
@@ -428,7 +428,7 @@ img{
   }
 
  
-`;function Vo(){return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsx)(Za,{}),(0,z.jsxs)(Bo,{children:[(0,z.jsx)(`video`,{autoplay:!0,loop:!0,muted:!0,playsinline:!0,"webkit-playsinline":!0,src:Hn}),(0,z.jsx)(`h1`,{children:`Nossos Serviços`}),(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`Entra em contato pelo whatssap`})})]}),(0,z.jsx)(zo,{})]})}function Ho(){return(0,z.jsx)(On,{children:(0,z.jsxs)(Wt,{children:[(0,z.jsx)(Ht,{path:`/`,element:(0,z.jsx)(To,{})}),(0,z.jsx)(Ht,{path:`/nossos-serviços`,element:(0,z.jsx)(Vo,{})})]})})}var Uo=Ga`
+`;function Vo(){return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsx)(Za,{}),(0,z.jsxs)(Bo,{children:[(0,z.jsx)(`video`,{autoPlay:!0,loop:!0,muted:!0,playsInline:!0,src:Hn}),(0,z.jsx)(`h1`,{children:`Nossos Serviços`}),(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`Entra em contato pelo whatssap`})})]}),(0,z.jsx)(zo,{})]})}function Ho(){return(0,z.jsx)(On,{children:(0,z.jsxs)(Wt,{children:[(0,z.jsx)(Ht,{path:`/`,element:(0,z.jsx)(To,{})}),(0,z.jsx)(Ht,{path:`/nossos-serviços`,element:(0,z.jsx)(Vo,{})})]})})}var Uo=Ga`
   * {
 	margin: 0;
 	padding: 0;
