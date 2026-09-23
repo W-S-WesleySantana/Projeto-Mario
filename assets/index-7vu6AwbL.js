@@ -39,7 +39,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       border-radius: 10px;
     }
   }
-`,Xa=o((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),z=o(((e,t)=>{t.exports=Xa()}))();function Za(){return(0,z.jsxs)(Ya,{children:[(0,z.jsx)(`img`,{src:Wn,alt:`Logo Header`}),(0,z.jsx)(`a`,{href:`./`,children:`Home`}),(0,z.jsx)(`a`,{href:`https://wa.me`,target:`blank`,children:`Fala Conosco`}),(0,z.jsx)(`a`,{href:`/nossosServiços`,children:`Nossos Serviços`})]})}var Qa=`/Projeto-Mario/assets/logo-BDOfDlmR.png`,$a=R.div`
+`,Xa=o((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),z=o(((e,t)=>{t.exports=Xa()}))();function Za(){return(0,z.jsxs)(Ya,{children:[(0,z.jsx)(`img`,{src:Wn,alt:`Logo Header`}),(0,z.jsx)(kn,{to:`./`,children:`Home`}),(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:`Fala Conosco`}),(0,z.jsx)(kn,{to:`/nossos-serviços`,children:`Nossos Serviços`})]})}var Qa=`/Projeto-Mario/assets/logo-BDOfDlmR.png`,$a=R.div`
   width: 50vw;
   z-index: 1;
 
@@ -224,7 +224,7 @@ height: auto;
       border-radius: 30px;
     }
   }
-`;function To(){let[e,t]=(0,x.useState)(!1);return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsxs)(So,{children:[(0,z.jsx)(`video`,{autoPlay:!0,muted:!0,loop:!0,src:Hn}),(0,z.jsx)(Za,{}),(0,z.jsx)(_o,{aoClicarContato:()=>t(!0)}),(0,z.jsx)(Co,{children:(0,z.jsx)(`img`,{src:Vn,alt:`Imagem do Mario e Luigi`})}),(0,z.jsx)(wo,{children:(0,z.jsx)(`a`,{href:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`icone Whatsapp`})})})]}),(0,z.jsx)(xo,{aberto:e,aoFechar:()=>t(!1)})]})}var Eo=Ja`
+`;function To(){let[e,t]=(0,x.useState)(!1);return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsxs)(So,{children:[(0,z.jsx)(`video`,{autoPlay:!0,muted:!0,loop:!0,src:Hn}),(0,z.jsx)(Za,{}),(0,z.jsx)(_o,{aoClicarContato:()=>t(!0)}),(0,z.jsx)(Co,{children:(0,z.jsx)(`img`,{src:Vn,alt:`Imagem do Mario e Luigi`})}),(0,z.jsx)(wo,{children:(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`icone Whatsapp`})})})]}),(0,z.jsx)(xo,{aberto:e,aoFechar:()=>t(!1)})]})}var Eo=Ja`
   from { opacity: 0; visibility: hidden; }
   to { opacity: 1; visibility: visible; }
 `,Do=R.div`
@@ -296,7 +296,7 @@ img{
   border: none;
   font-size: 32px;
   cursor: pointer;
-  color: ${e=>e.ativa?`#ffc107`:`#e4e5e9`};
+  color: ${e=>e.$ativa?`#ffc107`:`#e4e5e9`};
   transition: color 0.2s;
   
   &:hover {
@@ -364,7 +364,7 @@ img{
 
 
 
-`;function zo(){let[e,t]=(0,x.useState)(``),[n,r]=(0,x.useState)(``),[i,a]=(0,x.useState)(0),[o,s]=(0,x.useState)(0),[c,l]=(0,x.useState)([]);return(0,x.useEffect)(()=>{let e=localStorage.getItem(`avaliacoes_mario`);e&&setTimeout(()=>{l(JSON.parse(e))},0)},[]),(0,z.jsxs)(Do,{children:[(0,z.jsx)(`h2`,{children:`Deixe sua Avaliação`}),(0,z.jsxs)(Oo,{onSubmit:o=>{if(o.preventDefault(),!e||!n||i===0){alert(`Por favor, preencha o nome, comentário e selecione as estrelas!`);return}let s=[{id:Date.now(),nome:e,comentario:n,nota:i,data:new Date().toLocaleDateString(`pt-BR`)},...c];l(s),localStorage.setItem(`avaliacoes_mario`,JSON.stringify(s)),t(``),r(``),a(0)},children:[(0,z.jsx)(ko,{type:`text`,placeholder:`Seu nome`,value:e,onChange:e=>t(e.target.value)}),(0,z.jsx)(jo,{children:[1,2,3,4,5].map(e=>(0,z.jsx)(Mo,{type:`button`,onClick:()=>a(e),onMouseEnter:()=>s(e),onMouseLeave:()=>s(0),ativa:e<=(o||i),children:`★`},e))}),(0,z.jsx)(Ao,{placeholder:`Escreva seu comentário aqui...`,rows:`4`,value:n,onChange:e=>r(e.target.value)}),(0,z.jsx)(No,{type:`submit`,children:`Enviar Avaliação`})]}),(0,z.jsxs)(Po,{children:[(0,z.jsxs)(`h3`,{children:[`Avaliações dos Clientes (`,c.length,`)`]}),c.length===0?(0,z.jsx)(`p`,{children:`Nenhuma avaliação ainda. Seja o primeiro!`}):c.map(e=>(0,z.jsxs)(Fo,{children:[(0,z.jsxs)(Io,{children:[(0,z.jsx)(`strong`,{children:e.nome}),(0,z.jsxs)(Lo,{children:[`★`.repeat(e.nota),`☆`.repeat(5-e.nota)]})]}),(0,z.jsx)(`p`,{children:e.comentario}),(0,z.jsx)(Ro,{children:e.data})]},e.id))]}),(0,z.jsx)(`a`,{href:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`Entra em contato pelo whatssap`})})]})}var Bo=R.div`
+`;function zo(){let[e,t]=(0,x.useState)(``),[n,r]=(0,x.useState)(``),[i,a]=(0,x.useState)(0),[o,s]=(0,x.useState)(0),[c,l]=(0,x.useState)([]);return(0,x.useEffect)(()=>{let e=localStorage.getItem(`avaliacoes_mario`);e&&setTimeout(()=>{l(JSON.parse(e))},0)},[]),(0,z.jsxs)(Do,{children:[(0,z.jsx)(`h2`,{children:`Deixe sua Avaliação`}),(0,z.jsxs)(Oo,{onSubmit:o=>{if(o.preventDefault(),!e||!n||i===0){alert(`Por favor, preencha o nome, comentário e selecione as estrelas!`);return}let s=[{id:Date.now(),nome:e,comentario:n,nota:i,data:new Date().toLocaleDateString(`pt-BR`)},...c];l(s),localStorage.setItem(`avaliacoes_mario`,JSON.stringify(s)),t(``),r(``),a(0)},children:[(0,z.jsx)(ko,{type:`text`,placeholder:`Seu nome`,value:e,onChange:e=>t(e.target.value)}),(0,z.jsx)(jo,{children:[1,2,3,4,5].map(e=>(0,z.jsx)(Mo,{type:`button`,onClick:()=>a(e),onMouseEnter:()=>s(e),onMouseLeave:()=>s(0),ativa:e<=(o||i),children:`★`},e))}),(0,z.jsx)(Ao,{placeholder:`Escreva seu comentário aqui...`,rows:`4`,value:n,onChange:e=>r(e.target.value)}),(0,z.jsx)(No,{type:`submit`,children:`Enviar Avaliação`})]}),(0,z.jsxs)(Po,{children:[(0,z.jsxs)(`h3`,{children:[`Avaliações dos Clientes (`,c.length,`)`]}),c.length===0?(0,z.jsx)(`p`,{children:`Nenhuma avaliação ainda. Seja o primeiro!`}):c.map(e=>(0,z.jsxs)(Fo,{children:[(0,z.jsxs)(Io,{children:[(0,z.jsx)(`strong`,{children:e.nome}),(0,z.jsxs)(Lo,{children:[`★`.repeat(e.nota),`☆`.repeat(5-e.nota)]})]}),(0,z.jsx)(`p`,{children:e.comentario}),(0,z.jsx)(Ro,{children:e.data})]},e.id))]}),(0,z.jsx)(`link`,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`Entra em contato pelo whatssap`})})]})}var Bo=R.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -413,7 +413,7 @@ img{
   }
 
  
-`;function Vo(){return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsx)(Za,{}),(0,z.jsxs)(Bo,{children:[(0,z.jsx)(`video`,{autoPlay:!0,muted:!0,loop:!0,src:Hn}),(0,z.jsx)(`h1`,{children:`Nossos Serviços`}),(0,z.jsx)(`a`,{href:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`Entra em contato pelo whatssap`})})]}),(0,z.jsx)(zo,{})]})}function Ho(){return(0,z.jsx)(On,{children:(0,z.jsxs)(Wt,{children:[(0,z.jsx)(Ht,{path:`/`,element:(0,z.jsx)(To,{})}),(0,z.jsx)(Ht,{path:`/nossos-serviços`,element:(0,z.jsx)(Vo,{})})]})})}var Uo=Ga`
+`;function Vo(){return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsx)(Za,{}),(0,z.jsxs)(Bo,{children:[(0,z.jsx)(`video`,{autoPlay:!0,muted:!0,loop:!0,src:Hn}),(0,z.jsx)(`h1`,{children:`Nossos Serviços`}),(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`Entra em contato pelo whatssap`})})]}),(0,z.jsx)(zo,{})]})}function Ho(){return(0,z.jsx)(On,{children:(0,z.jsxs)(Wt,{children:[(0,z.jsx)(Ht,{path:`/`,element:(0,z.jsx)(To,{})}),(0,z.jsx)(Ht,{path:`/nossos-serviços`,element:(0,z.jsx)(Vo,{})})]})})}var Uo=Ga`
   * {
 	margin: 0;
 	padding: 0;
