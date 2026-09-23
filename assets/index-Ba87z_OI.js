@@ -224,7 +224,7 @@ height: auto;
       border-radius: 30px;
     }
   }
-`;function To(){let[e,t]=(0,x.useState)(!1);return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsxs)(So,{children:[(0,z.jsx)(`video`,{autoPlay:!0,muted:!0,loop:!0,src:Hn}),(0,z.jsx)(Za,{}),(0,z.jsx)(_o,{aoClicarContato:()=>t(!0)}),(0,z.jsx)(Co,{children:(0,z.jsx)(`img`,{src:Vn,alt:`Imagem do Mario e Luigi`})}),(0,z.jsx)(wo,{children:(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`icone Whatsapp`})})})]}),(0,z.jsx)(xo,{aberto:e,aoFechar:()=>t(!1)})]})}var Eo=Ja`
+`;function To(){let[e,t]=(0,x.useState)(!1);return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsxs)(So,{children:[(0,z.jsx)(`video`,{autoplay:!0,loop:!0,muted:!0,playsinline:!0,"webkit-playsinline":!0,src:Hn}),(0,z.jsx)(Za,{}),(0,z.jsx)(_o,{aoClicarContato:()=>t(!0)}),(0,z.jsx)(Co,{children:(0,z.jsx)(`img`,{src:Vn,alt:`Imagem do Mario e Luigi`})}),(0,z.jsx)(wo,{children:(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`icone Whatsapp`})})})]}),(0,z.jsx)(xo,{aberto:e,aoFechar:()=>t(!1)})]})}var Eo=Ja`
   from { opacity: 0; visibility: hidden; }
   to { opacity: 1; visibility: visible; }
 `,Do=R.div`
