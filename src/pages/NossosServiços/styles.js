@@ -1,17 +1,20 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: space-evenly;
   box-sizing: border-box;
-
   isolation: isolate;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   transform: translate3d(0, 0, 0);
+
+
 
   video {
     width: 100%;
@@ -28,51 +31,26 @@ export const Container = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     z-index: -1;
     pointer-events: none;
+
+
+
   }
-`;
-
-export const RightContainer = styled.div`
-  z-index: 2;
-
-  img {
-    height: 60vh;
 
 
-    @media (max-width: 900px) {
-
-width:auto;
-height: auto;
-}
-
-    @media (max-width: 700px) {
-
-      width: 150px;
-     height: auto;
-    }
+  img{
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    width: 50px;
+  }
 
  
-  }
-
-
 `;
 
-export const IconWhatssap = styled.div`
-  img {
-    width: 50px;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    cursor: pointer;
 
-    &:hover {
-      box-shadow: 5px 10px 71px 21px rgba(39, 94, 3, 0.65);
-      -webkit-box-shadow: 5px 10px 71px 21px rgba(39, 94, 3, 0.65);
-      border-radius: 30px;
-    }
-  }
-`;
+
