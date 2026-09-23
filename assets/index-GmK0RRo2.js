@@ -413,7 +413,7 @@ img{
   }
 
  
-`;function Vo(){return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsx)(Za,{}),(0,z.jsxs)(Bo,{children:[(0,z.jsx)(`video`,{autoPlay:!0,muted:!0,loop:!0,src:Hn}),(0,z.jsx)(`h1`,{children:`Nossos Serviços`}),(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`Entra em contato pelo whatssap`})})]}),(0,z.jsx)(zo,{})]})}function Ho(){return(0,z.jsx)(On,{children:(0,z.jsxs)(Wt,{children:[(0,z.jsx)(Ht,{path:`/`,element:(0,z.jsx)(To,{})}),(0,z.jsx)(Ht,{path:`/nossos-serviços`,element:(0,z.jsx)(Vo,{})})]})})}var Uo=Ga`
+`;function Vo(){return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsx)(Za,{}),(0,z.jsxs)(Bo,{children:[(0,z.jsx)(`video`,{autoplay:!0,loop:!0,muted:!0,playsinline:!0,"webkit-playsinline":!0,src:Hn}),(0,z.jsx)(`h1`,{children:`Nossos Serviços`}),(0,z.jsx)(kn,{to:`https://wa.me`,target:`blank`,children:(0,z.jsx)(`img`,{src:Un,alt:`Entra em contato pelo whatssap`})})]}),(0,z.jsx)(zo,{})]})}function Ho(){return(0,z.jsx)(On,{children:(0,z.jsxs)(Wt,{children:[(0,z.jsx)(Ht,{path:`/`,element:(0,z.jsx)(To,{})}),(0,z.jsx)(Ht,{path:`/nossos-serviços`,element:(0,z.jsx)(Vo,{})})]})})}var Uo=Ga`
   * {
 	margin: 0;
 	padding: 0;
