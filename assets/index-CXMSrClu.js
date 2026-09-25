@@ -446,22 +446,4 @@ img{
   }
 
  
-`;function B(){return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsx)(Uo,{}),(0,z.jsx)(Ho,{})]})}var V=Ga`
-  * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  color: #fff;
-  outline: none;
-
-  }
-
-  body{
-    background:rgb(218, 218, 218);
-  }
-
- 
-`;(0,Bn.createRoot)(document.getElementById(`root`)).render((0,z.jsxs)(x.StrictMode,{children:[(0,z.jsx)(V,{}),(0,z.jsx)(B,{})]}));
+`;function B(){return(0,z.jsxs)(z.Fragment,{children:[(0,z.jsx)(Uo,{}),(0,z.jsx)(Ho,{})]})}(0,Bn.createRoot)(document.getElementById(`root`)).render((0,z.jsxs)(x.StrictMode,{children:[(0,z.jsx)(Uo,{}),(0,z.jsx)(B,{})]}));
